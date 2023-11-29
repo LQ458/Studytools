@@ -21,9 +21,9 @@ app.listen(port, '0.0.0.0',()=>{
 app.use(express.static('public'));
 
 app.get('/',(req, res)=>{
-    res.render('/intro');
+    res.render('intro');
 })
 
 app.get('/intro',(req,res)=>{
-    res.render('/intro')
+    res.render('intro')
 })
