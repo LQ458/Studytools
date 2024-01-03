@@ -13,7 +13,9 @@ app.use(session({
     saveUninitialized: false
 }))
 
-app.set('view engine', 'ejs');
+
+
+     app.set('view engine', 'ejs');
 app.listen(port, '0.0.0.0',()=>{
     console.log("Server is running on port 3000");
 })
@@ -27,3 +29,7 @@ app.get('/',(req, res)=>{
 app.get('/intro',(req,res)=>{
     res.render('intro')
 })
+
+// app.post('/upload', (req,res)=>{
+
+// })
