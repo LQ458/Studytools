@@ -1,4 +1,18 @@
-import { createApp } from 'vue'
+// src/router/index.js
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: App
+  },
+]
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
+
+export default router
